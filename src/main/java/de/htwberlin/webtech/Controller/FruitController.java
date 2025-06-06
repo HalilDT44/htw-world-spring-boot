@@ -12,6 +12,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class FruitController {
     @GetMapping("/fruits")
+    @CrossOrigin(origins = "https://webtech-frontend-gmy6.onrender.com")
     public List<String> getFruits() {
         return List.of("Apple", "Banana", "Cherry");
     }
