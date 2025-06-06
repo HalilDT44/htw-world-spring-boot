@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@CrossOrigin(origins = "*") // für CORS, ggf. Render-Domain angeben
+@CrossOrigin(origins = "*") // Erlaubt CORS-Anfragen von allen Ursprüngen
 @RestController
 @RequestMapping("/api")
 public class FruitController {
