@@ -7,11 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@CrossOrigin(origins = "*") // Erlaubt CORS-Anfragen von allen Ursprüngen
+@CrossOrigin(origins = "https://webtech-frontend-gmy6.onrender.com") // oder "*"
 @RestController
 @RequestMapping("/api")
 public class FruitController {
-
     @GetMapping("/fruits")
     public List<String> getFruits() {
         return List.of("Apple", "Banana", "Cherry");
